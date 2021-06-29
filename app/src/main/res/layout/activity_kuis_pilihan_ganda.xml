@@ -1,9 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cc2"
     tools:context=".KuisPilihanGanda">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/lineSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKOR : "
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvSkor"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineSoal"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/lineSkor"
+        android:layout_margin="10dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvSoal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linePilihanJawaban"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/lineSoal"
+        android:layout_margin="10dp">
+
+        <RadioGroup
+            android:id="@+id/rgPilihanJawaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="normal"/>
+
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="normal"/>
+
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="normal"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linePilihanJawaban"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="25dp"
+        android:background="#FBCEB1"
+        android:text="SUBMIT" />
+
+</RelativeLayout>

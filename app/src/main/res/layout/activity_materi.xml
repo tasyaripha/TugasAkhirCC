@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Materi"
+    android:background="@drawable/cc2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ccMateriHewan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Apa sih yang dimaksud dengan Hewan?"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/materiHewan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:fontFamily="serif-monospace"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Hewan, binatang, fauna, margasatwa, atau satwa adalah organisme eukariotik multiseluler yang membentuk kerajaan biologi Animalia. Dengan sedikit pengecualian, hewan mengonsumsi bahan organik, menghirup oksigen, dapat bergerak, bereproduksi secara seksual, dan tumbuh dari bola sel yang berongga, blastula, selama fase perkembangan embrio." />
+
+            <TextView
+                android:id="@+id/ccMateriJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Jenis-Jenis Hewan :"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgHewan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/jenis1"/>
+
+            <TextView
+                android:id="@+id/Jenis1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Vertebrata adalah jenis hewan subfilum dari Chordata yang mencakup semua hewan yang memiliki tulang belakang. Vertebrata merupakan subfilum terbesar dari Chordata. Semua jenis ikan, amfibia, reptil, burung, serta hewan menyusui (mamalia) dapat dimasukkan ke dalam vertebrata, kecuali belut, remang, dan lintah laut. " />
+
+            <TextView
+                android:id="@+id/Jenis2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Invertebrata atau Avertebrata adalah hewan yang termasuk kedalam jenis hewan yang tidak memiliki tulang punggung antar ruas-ruas tulang belakang. Hewan avertebrata ini terbagi atas beberapa golongan yaitu filum Protozoa, Porifera, Arthopoda, Platyhelmintes, Nemathelmintes, Annelida, Coelenterata, Mollusca, dan Echinordemata." />
+
+            <TextView
+                android:id="@+id/ccMateriKembangBiak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Perkembangbiakan Hewan :"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imgHewan2"
+                android:layout_width="match_parent"
+                android:layout_height="228dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/kb1" />
+
+            <TextView
+                android:id="@+id/JenisKB1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="OVIPAR merupakan cara perkembangbiakan yang biasanya dilakukan oleh unggas dan reptil. Setelah terjadi pembuahan, embrio yang dihasilkan akan tumbuh dan berkembang di dalam cangkang telur. Embrio tersebut mendapatkan nutrisi dan cadangan makanan dari dalam telur. Beberapa ciri-ciri hewan ovipar yaitu tidak memiliki kelenjar susu dan tidak memiliki daun telinga. Contoh hewan bertelur adalah ayam, bebek, dan angsa." />
+
+            <TextView
+                android:id="@+id/JenisKB2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="VIVIPAR merupakan perkembangbiakan yang dilakukan dengan cara melahirkan. Setelah terjadi pembuahan, embrio akan tumbuh dan berkembang di dalam rahim betina. Selama di dalam kandungan, embrio tersebut mendapatkan nutrisi dari makanan yang dimakan oleh induknya melalui plasenta. Beberapa ciri-ciri hewan vivipar yaitu memiliki kelenjar susu, memiliki daun telinga, tubuh dilindungi bulu. Contoh hewan melahirkan adalah kucing, anjing, dan singa." />
+
+            <TextView
+                android:id="@+id/JenisKB3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="Berbeda dengan dua hal tadi, cara perkembangbiakan ovovivipar merupakan kombinasi dari dua tadi. Ketika terjadi pembuahan, maka embrio yang dihasilkan akan tumbuh dan berkembang di dalam telur. Sekilas memang terdengar mirip ovipar. Tapi, pada ovovivipar, telur tersebut tidak akan dikeluarkan dari tubuh induknya, melainkan akan tetap berada di dalam tubuh induknya sampai menetas. Setelah menetas, baru calon anak tersebut akan dilahirkan lewat tubuh ibunya. Jumlah hewan yang berkembangbiak dengan cara ovovivipar ini tidak sebanyak ovipar dan vivipar. Beberapa hewan yang berkembangbiak dengan ovovivipar di antaranya adalah platypus, kuda laut, beberapa spesies ikan hiu, dan iguana." />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
