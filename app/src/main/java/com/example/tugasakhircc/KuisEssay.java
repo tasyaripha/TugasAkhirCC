@@ -75,7 +75,7 @@ public class KuisEssay extends AppCompatActivity {
     public void cekJawaban() {
         if(!edtJawaban.getText().toString().isEmpty()) {
             if (edtJawaban.getText().toString().equalsIgnoreCase(jawaban)) {
-                skor = skor + 10;
+                skor = skor + 20;
                 tvSkor2.setText("" + skor);
                 Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_SHORT).show();
                 setKonten();

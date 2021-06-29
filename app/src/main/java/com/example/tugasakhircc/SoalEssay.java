@@ -4,16 +4,25 @@ public class SoalEssay {
     public String pertanyaan[] = {
             "Gambar diatas bernapas menggunakan?",
             "Kucing berkembangbiak dengan cara?",
+            "Hewan-hewan diatas hidup di?",
+            "Sapi, Kambing dan Kuda termasuk hewan yang makan?",
+            "Hewan-hewan diatas hidup di?"
     };
 
     public String image[] = {
            "essayimg1",
-            "essayimg2"
+            "essayimg2",
+            "essayimg3",
+            "essayimg4",
+            "essayimg5"
     };
 
     public String jawabanBenar[] = {
            "Ingsan",
-            "Vivipar"
+            "Melahirkan",
+            "Air",
+            "Rumput",
+            "Darat"
     };
 
     String getPertanyaan(int x) {

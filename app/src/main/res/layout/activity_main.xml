@@ -14,10 +14,10 @@
         android:layout_height="287dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="60dp"
+        android:layout_margin="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="0dp"
         android:src="@drawable/img1" />
 
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/cc"
         android:layout_alignParentLeft="true"
-        android:layout_margin="20dp"
+        android:layout_margin="25dp"
         android:orientation="vertical">
 
         <ImageView
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/cc"
         android:layout_alignParentRight="true"
-        android:layout_margin="20dp"
+        android:layout_margin="25dp"
         android:orientation="vertical">
 
         <ImageView
@@ -73,12 +73,12 @@
         android:id="@+id/taCC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="75dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="`Tugas Akhir Cerdas Cermat`"
+        android:text="`Tugas Akhir Cerdas Cermat Hewan`"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/black"/>

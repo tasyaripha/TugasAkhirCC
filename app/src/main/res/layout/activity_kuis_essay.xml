@@ -37,7 +37,7 @@
     <LinearLayout
         android:id="@+id/lineGambar"
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="285dp"
         android:layout_below="@id/lineSkor2"
         android:layout_margin="10dp"
         android:orientation="vertical">
@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/lineGambar"
-        android:layout_margin="10dp"
+        android:layout_margin="30dp"
         android:background="@color/white"
         android:gravity="center"
         android:hint="Masukkan Jawaban disini"
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@id/edJawaban"
-        android:layout_margin="10dp"
+        android:layout_margin="30dp"
         android:background="#FBCEB1"
         android:text="SUBMIT"/>
 </RelativeLayout>

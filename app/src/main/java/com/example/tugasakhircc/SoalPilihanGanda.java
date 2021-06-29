@@ -15,7 +15,7 @@ public class SoalPilihanGanda {
             {"Ovipar", "Vivipar", "Ovovivipar"},
             {"Ikan", "Kucing", "Burung"},
             {"Vivipar", "Ovipar", "Ovovivipar"},
-            {"Bernafas", "Berenang", "Mencari Makan"},
+            {"Bernapas", "Berenang", "Mencari Makan"},
             {"Hewan Darat", "Hewan Air", "Hewan Udara"}
 
     };
