@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.QuickContactBadge;
 
 public class MainActivity extends AppCompatActivity {
+//Deklarasikan LineMateri dan LineQuiz untuk memanggil menu Materi dan menu Quiz
 
     LinearLayout mlineMateri, mLineQuiz;
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         mlineMateri = (LinearLayout) findViewById(R.id.lineMateri);
         mLineQuiz = (LinearLayout) findViewById(R.id.lineQuiz);
 
+        //Ketika lineMateri di setOnClick agar bisa diklik
         mlineMateri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //Ketika lineQuiz di setOnClick agar bisa diklik
         mLineQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
