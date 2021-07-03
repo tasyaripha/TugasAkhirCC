@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class KuisPilihanGanda extends AppCompatActivity {
 
+    //Deklarasikan semua yang berada di Quiz.xml
     TextView tvSkor, tvSoal;
     RadioGroup rgPilihanJawaban;
     RadioButton rbPilihanJawaban1, rbPilihanJawaban2, rbPilihanJawaban3;
@@ -48,6 +49,7 @@ public class KuisPilihanGanda extends AppCompatActivity {
         });
     }
 
+    //Di setKonten ini untuk menentukan jumlah point setiap pertanyaan dan Hasil AKhir Score nya
     private void setKonten() {
         rgPilihanJawaban.clearCheck();
         arr = soalPG.pertanyaan.length;
@@ -68,6 +70,9 @@ public class KuisPilihanGanda extends AppCompatActivity {
         x++;
     }
 
+    //Jika jawaban 1 benar maka user mendapatkan skor 20 dan jika salah user tidak mendaptkan skor,
+    // dan Jika user ingin keluar dari menu pilihan ganda akan ada notif selesaikan kuis terlebih
+    // dahulu baru bisa kembali ke menu utama
     public void cekJawaban() {
         if (rbPilihanJawaban1.isChecked()) {
             if (rbPilihanJawaban1.getText().toString().equals(jawaban)) {
