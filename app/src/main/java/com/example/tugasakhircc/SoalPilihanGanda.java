@@ -1,5 +1,6 @@
 package com.example.tugasakhircc;
 
+//Soal Pilihan Ganda ini untuk menempatkan pertanyaan, pilihan jawaban dan jawaban benar
 public class SoalPilihanGanda {
     public String pertanyaan[] = {
             "Kucing berkembangbiak dengan cara?",
