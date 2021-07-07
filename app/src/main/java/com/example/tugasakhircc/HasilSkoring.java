@@ -1,4 +1,5 @@
 package com.example.tugasakhircc;
+//Final
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -60,4 +61,5 @@ public class HasilSkoring extends AppCompatActivity {
         //hanya muncul Toast
     }
 }
+
 
