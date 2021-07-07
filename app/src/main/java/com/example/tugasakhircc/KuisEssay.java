@@ -49,14 +49,19 @@ public class KuisEssay extends AppCompatActivity {
     private void setKonten() {
         edtJawaban.setText(null);
         arr = essay.pertanyaan.length;
-        if (x >= arr) {
-            String jumlahSkor = String.valueOf(skor);
+        if (x >= arr) { //jika nilai x melebihi nilai arr(panjang array) maka akan pindah activity (kuis selesai)
+            String jumlahSkor = String.valueOf(skor);       //menjadikan skor menjadi string
             Intent i = new Intent(KuisEssay.this, HasilSkoring.class);
 
+            //waktu pindah activity, sekalian membawa nilai jumlahSkor yang ditampung dengan inisial skorAkhir2
+            //singkatnya skorAkhir2 = jumlahSkor
+            //jika masih belum jelas silahkan bertanya
             i.putExtra("skorAkhir2", jumlahSkor);
             i.putExtra("activity","Essay");
             startActivity(i);
         } else {
+
+            //setting text dengan mengambil text dari method getter di kelas SoalEssay
             tvSoal2.setText(essay.getPertanyaan(x));
             ubahGambar();
             jawaban = essay.getJawabanBenar(x);
@@ -74,11 +79,13 @@ public class KuisEssay extends AppCompatActivity {
 
     public void cekJawaban() {
         if(!edtJawaban.getText().toString().isEmpty()) {
+            //jika edit text TIDAK kosong
+            //jika text yang tertulis di edit text tsb = nilai dari var jawaban
             if (edtJawaban.getText().toString().equalsIgnoreCase(jawaban)) {
                 skor = skor + 20;
-                tvSkor2.setText("" + skor);
-                Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_SHORT).show();
-                setKonten();
+                tvSkor2.setText("" + skor);        //tvSkor2 diset nilainya = var skor
+                Toast.makeText(this, "Jawaban Benar", Toast.LENGTH_SHORT).show(); //keluar notifikasi "Jawaban Benar"
+                setKonten(); //update next konten
             } else {
                 tvSkor2.setText("" + skor);
                 Toast.makeText(this, "Jawaban Salah", Toast.LENGTH_SHORT).show();
@@ -89,7 +96,12 @@ public class KuisEssay extends AppCompatActivity {
         }
     }
 
+    //ini adalah method bawaan dari Android Studio
+    //fungsi : memberi aksi ketika tombol back pada hp diklik
     public void onBackPressed() {
         Toast.makeText(this, "Selesaikan Kuis", Toast.LENGTH_SHORT).show();
+        //jadi yang awalnya klik tombol back maka akan kembali ke activity sebelumnya
+        //kali ini ketika tombol back diklik maka
+        //hanya muncul Toast
     }
 }
